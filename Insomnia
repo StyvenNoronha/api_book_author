@@ -1,0 +1,406 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-03-16T22:50:26.793Z",
+  "__export_source": "insomnia.desktop.app:v10.3.1",
+  "resources": [
+    {
+      "_id": "req_9b6ee4bd17a6496ea63aac8cd5538d92",
+      "parentId": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "modified": 1742159312384,
+      "created": 1742159220074,
+      "url": "{{ _.base }}/{{ _.resource }}",
+      "name": "INDEX",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742159220074,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "parentId": "wrk_1adc6a6ef74242d4bbdb6f5d3cf5c311",
+      "modified": 1742154492114,
+      "created": 1742154142401,
+      "name": "book",
+      "description": "",
+      "environment": {
+        "resource": "book"
+      },
+      "environmentPropertyOrder": {
+        "&": [
+          "resource"
+        ]
+      },
+      "metaSortKey": -1742154142401,
+      "environmentType": "json",
+      "kvPairData": [],
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_1adc6a6ef74242d4bbdb6f5d3cf5c311",
+      "parentId": null,
+      "modified": 1742149330052,
+      "created": 1742149330052,
+      "name": "livros_author",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_fa3fdb18517d40219520b15b1fafad55",
+      "parentId": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "modified": 1742159548642,
+      "created": 1742159326678,
+      "url": "{{ _.base }}/{{ _.resource }}/1c103d07-cff4-4654-8ec8-e3f2ccc45327",
+      "name": "SHOW",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742157118930,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_df41403464634b0188f800214cc9a891",
+      "parentId": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "modified": 1742164393711,
+      "created": 1742164298746,
+      "url": "{{ _.base }}/{{ _.resource }}/1c103d07-cff4-4654-8ec8-e3f2ccc45327/atualizar",
+      "name": "UPDATE",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\":\"bataba ultra feliz\",\n\t\"publication_year\":1999\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742156068358,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9361dfb62ce84d35b912add269d13fbc",
+      "parentId": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "modified": 1742164598824,
+      "created": 1742164585120,
+      "url": "{{ _.base }}/{{ _.resource }}/1c103d07-cff4-4654-8ec8-e3f2ccc45327/remove",
+      "name": "REMOVE",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742155543072,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e0f9e718a81c47d69ba628e326b4f149",
+      "parentId": "fld_9ca65dde2ac64d109e8a42d9f950574a",
+      "modified": 1742158998444,
+      "created": 1742155017786,
+      "url": "{{ _.base }}/{{ _.resource }}",
+      "name": "CREATE",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\":\"batata_feliz\",\n\t\"publication_year\":2024,\n\t\"author_id\":\"ebe0b196-0402-4ae5-a5a9-11b801d1cb64\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742155017786,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9aa4efbfb15a40dd8684292c0888bf74",
+      "parentId": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "modified": 1742153280687,
+      "created": 1742153154221,
+      "url": "{{ _.base }}/{{ _.resource }}/c1e489a1-fb5d-43e4-8d03-3e9c49adcd76/atualiza",
+      "name": "ATUALIZA",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\":\"albertinho\",\n\t\"birthdate\":\"09/09/1990\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742153154221,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "parentId": "wrk_1adc6a6ef74242d4bbdb6f5d3cf5c311",
+      "modified": 1742149403858,
+      "created": 1742149384894,
+      "name": "author",
+      "description": "",
+      "environment": {
+        "resource": "author"
+      },
+      "environmentPropertyOrder": {
+        "&": [
+          "resource"
+        ]
+      },
+      "metaSortKey": -1742149384894,
+      "environmentType": "json",
+      "kvPairData": [],
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_57a977f5261048c2b70d9737cd2dbd8a",
+      "parentId": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "modified": 1742154499782,
+      "created": 1742153818893,
+      "url": "{{ _.base }}/{{ _.resource }}/252ddaf0-3cf4-450f-8570-5d89b6929198",
+      "name": "REMOVE",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742152018020,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_adafd2ced23248fd82e35dc85a00c0a0",
+      "parentId": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "modified": 1742150902144,
+      "created": 1742150881819,
+      "url": "{{ _.base }}/{{ _.resource }}",
+      "name": "INDEX",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742150881819,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4948fbef655e435b8ecaee19873a3ea1",
+      "parentId": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "modified": 1742151587909,
+      "created": 1742151316134,
+      "url": "{{ _.base }}/{{ _.resource }}/c1e489a1-fb5d-43e4-8d03-3e9c49adcd76",
+      "name": "SHOW",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742150143353,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2ae00d91aeb94fc680fc2cab5fbaddf7",
+      "parentId": "fld_527792aaeb264b269bddaa6e085e4ca1",
+      "modified": 1742150851639,
+      "created": 1742149404887,
+      "url": "{{ _.base }}/{{ _.resource }}",
+      "name": "CREATE",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\":\"jose\",\n\t\"birthdate\":\"09/09/1990\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1742149404887,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_39c0ed01ea57ea06e42732b4ddff6f932808dd79",
+      "parentId": "wrk_1adc6a6ef74242d4bbdb6f5d3cf5c311",
+      "modified": 1742149363546,
+      "created": 1742149330053,
+      "name": "Base Environment",
+      "data": {
+        "base": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1742149330053,
+      "environmentType": "json",
+      "kvPairData": [],
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_39c0ed01ea57ea06e42732b4ddff6f932808dd79",
+      "parentId": "wrk_1adc6a6ef74242d4bbdb6f5d3cf5c311",
+      "modified": 1742149330054,
+      "created": 1742149330054,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
